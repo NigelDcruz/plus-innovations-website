@@ -1,0 +1,146 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+p {
+    font-size: 17px;
+    line-height: 24px;
+    color: #000;
+
+    span {
+        font-weight: 500;
+    }
+}
+
+h1 {
+    font-size: 34px;
+    line-height: 48px;
+    font-weight: 300;
+
+    @media screen and (max-width: 490px) {
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 500;
+    }
+}
+
+.mw-264 {
+    max-width: 264px;
+
+    @media screen and (max-width: 992px) {
+        max-width: 100%;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+}
+
+.pl-72 {
+    padding-left: 72px;
+}
+
+.mt-90 {
+    margin-top: 90px;
+
+    @media screen and (max-width: 992px) {
+        margin-top: 10px;
+    }
+}
+
+
+
+h2 {
+    font-weight: 300;
+}
+
+h2.small {
+    font-size: 17px;
+    line-height: 20px;
+
+}
+
+h2.medium {
+    font-size: 34px;
+    line-height: 44px;
+}
+
+h2.large {
+    font-size: 50px;
+    line-height: 44px;
+}
+
+.decorated {
+    color: var(--primaryColor);
+
+    span {
+        color: var(--lightBlue);
+    }
+}
+
+p.number {
+    display: inline-block;
+    color: #000;
+    font-weight: 100;
+
+    &.small {
+        font-size: 21px;
+        line-height: 25px;
+    }
+
+    &.large {
+        font-size: 34px;
+        line-height: 40px;
+    }
+}
+
+
+p.heading-top {
+    color: #545454;
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: 100;
+
+    @media screen and (max-width: 490px) {
+        font-size: 28px;
+    }
+}
+
+h2.heading {
+    color: var(--lightBlue);
+    font-size: 50px;
+    line-height: 44px;
+
+    @media screen and (max-width: 490px) {
+        font-size: 30px;
+        line-height: 38px;
+    }
+}
+
+h2.simple-heading {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+}

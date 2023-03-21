@@ -1,0 +1,125 @@
+.placeholder-container {
+    position: relative;
+    height: 600px;
+    padding-top: 120px;
+
+    @media screen and (max-width: 992px) {
+        position: relative;
+        height: auto;
+        padding-top: 64px;
+    }
+
+    .circle-image {
+        position: absolute;
+        left: -73px;
+        top: -70px;
+        height: 170px;
+        width: 170px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+
+        @media screen and (max-width: 992px) {
+            left: -43px;
+            top: -35px;
+            height: 100px;
+            width: 100px;
+        }
+
+        @media screen and (max-width: 560px) {
+            left: -10px;
+            top: -18px;
+            height: 60px;
+            width: 60px;
+        }
+
+        &.ideabridge {
+            background-image: url('../assets/images/products/ideabridge-circle.png');
+        }
+
+        &.demo2 {
+            background-image: url('../assets/images/products/product-2-circle.png');
+        }
+
+        &.aapli {
+            background-image: url('../assets/images/products/aapli-circle.png');
+        }
+    }
+
+    .demo-image {
+        position: relative;
+        height: 495px;
+        max-width: 816px;
+        width: 100%;
+        margin-left: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        @media screen and (max-width: 992px) {
+            height: 345px;
+            max-width: 80%;
+            width: 100%;
+            margin-right: auto;
+        }
+
+        @media screen and (max-width: 560px) {
+            height: 220px;
+            max-width: 98%;
+            width: 100%;
+            background-size: contain;
+        }
+
+        &.ideabridge {
+            background-image: url('../assets/images/products/ideabridge-demo.png');
+
+        }
+
+        &.demo2 {
+            background-image: url('../assets/images/products/product-2-demo.png');
+
+        }
+
+
+        &.aapli {
+            background-image: url('../assets/images/products/aapli-demo.png');
+
+        }
+    }
+
+    &.invert {
+        .circle-image {
+            left: auto;
+            right: -81px;
+            top: -86px;
+
+            @media screen and (max-width: 992px) {
+
+                right: -52px;
+                top: -52px;
+            }
+
+            @media screen and (max-width: 560px) {
+
+                right: -17px;
+                top: -20px;
+            }
+        }
+
+        .demo-image {
+            margin-left: 0px;
+
+            @media screen and (max-width: 992px) {
+
+                margin-left: auto;
+            }
+        }
+    }
+
+}
+
+.sub-text {
+    font-size: 16px;
+    color: #545454;
+}
